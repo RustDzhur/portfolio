@@ -1,4 +1,4 @@
-<header>
+<header class="header">
   <div class="wrapper">
     <nav class="nav">
       <div class="menu-btn__box">
@@ -9,7 +9,6 @@
           </svg>
         </button>
       </div>
-      <img class="my-photo" src="./images/photo-mobile.png" alt="my photo">
       <div class="nav-container">
         <ul class="nav__item">
           <li class="nav__list"><a href="#" class="nav__link">Main Page <svg width="27px" height="27px"><use href="./images/icons.svg#icon-arrow-up"></use></svg></a></li>
@@ -19,11 +18,25 @@
           <li class="nav__list"><a href="#" class="nav__link">Contacts <svg width="27px" height="27px"><use href="./images/icons.svg#icon-arrow-up"></use></svg></a></li>
         </ul>
         <button class="hire-me">
-          <span>/hire</span>Hire me<span>/hire</span>
+          <span class="left">/hire</span>Hire me<span class="right">/hire</span>
         </button>
       </div>
+      <!-- <img class="my-photo" src="./images/photo-mobile.png" alt="my photo"> -->
 
-      <h1 class="title">Hello, I’m Rustem, <span class="title__span">Web Developer</span> </h1>
+      <picture>
+        <!--Мороженое-->
+        <source srcset="./images/photo-desktop.png 1188w, ./images/photo-desktop@2x.png 2376w"
+            media="(min-width: 1200px)" sizes="(min-width: 1200px) 1188px" />
+        <source srcset="./images/photo-tablet.png 993w, ./images/photo-tablet@2x.png 1986w"
+            media="(min-width: 780px)" sizes="(min-width: 780px) 880px" />
+        <source srcset="./images/photo-mobile.png 360w, ./images/photo-mobile@2x.png 720w"
+            media="(min-width: 320px)" sizes="(min-width: 320px) 360px" />
+        <img class="my-photo" src="./images/photo-mobile.png" alt="my photo">
+      </picture>
+
+      
+
+      <h1 class="title">Hello,<br> I’m Rustem, <br> <span class="title__span">Web Developer</span> </h1>
       <p class="socials__text">Let’s get in touch:</p>
       <ul class="socials">
         <li class="socials__list">
