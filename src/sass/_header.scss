@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 760px;
   @media screen and (min-width: 780px) {
     height: 992px;
     overflow: hidden;
@@ -82,6 +83,7 @@
   overflow: hidden;
   opacity: 0;
   transform: translateY(-100%);
+
   @media screen and (min-width: 780px) {
     background: inherit;
     opacity: 1;
@@ -93,6 +95,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 55px;
+    align-items: baseline;
   }
 }
 
@@ -211,9 +214,12 @@
   font-size: 24px;
   line-height: 1.5;
   color: #ffffff;
+
+  position: absolute;
+  z-index: 1;
+  top: 438px;
+  left: 20px;
   @media screen and (min-width: 780px) {
-    position: absolute;
-    z-index: 1;
     top: 570px;
     left: 20px;
   }
@@ -226,6 +232,10 @@
   align-items: center;
   margin-bottom: 23px;
   padding: 0;
+
+  position: absolute;
+  top: 484px;
+  left: 20px;
   &__list {
     margin-right: 8px;
     margin-bottom: 8px;
@@ -247,6 +257,11 @@
   justify-content: center;
   background-color: inherit;
   cursor: pointer;
+  
+  position: absolute;
+  z-index: 1;
+  top: 620px;
+  left: 20px;
   @media screen and (min-width: 780px) {
     position: absolute;
     z-index: 1;
@@ -270,7 +285,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.41;
   color: #ffffff;
   margin-right: 30px;
