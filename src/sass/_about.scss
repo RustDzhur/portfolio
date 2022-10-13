@@ -63,15 +63,6 @@
       width: 511px;
       height: 108px;
     }
-    &:hover{
-      background: linear-gradient(
-        108.46deg,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(255, 255, 255, 0.1) 100%
-      );
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-      backdrop-filter: blur(10px);
-    }
   }
   
   .resume__text {
