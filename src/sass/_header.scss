@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 760px;
+  height: 800px;
   @media screen and (min-width: 780px) {
     height: 992px;
     overflow: hidden;
@@ -260,7 +260,7 @@
   
   position: absolute;
   z-index: 1;
-  top: 620px;
+  top: 680px;
   left: 20px;
   @media screen and (min-width: 780px) {
     position: absolute;
@@ -285,7 +285,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.41;
   color: #ffffff;
   margin-right: 30px;
