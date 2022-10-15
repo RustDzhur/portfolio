@@ -35,22 +35,22 @@ async function getResponse () {
 getResponse ()
 
 async function onRengerNews (news) {
-    const markupNews = news.map((newer) => {
+    const markupNews = news.map(news => {
         return `<li class="splide__slide">
-        <a class="card-news__link" href="${newer.url}" target="_blanc">
+        <a class="card-news__link" href="${news.url}" target="_blanc">
             <div class="card-news__wrapper">
                 <h3 class="card-news__title">
-                ${newer.title}
+                ${news.title}
                 </h3>
-                <img class="card-news__img" src="${newer.urlToImage}" loading="lazy" alt="">
+                <img class="card-news__img" src="${news.urlToImage}" loading="lazy" alt="">
                 <p class="card-news__disr">
-                ${newer.description}
+                ${news.description}
                 </p>
                 <p class="card-news__author">
-                ${newer.author}
+                ${news.author}
                 </p>
                 <p class="card-news__date">
-                ${newer.publishedAt}
+                ${news.publishedAt}
                 </p>
             </div>
         </a>
