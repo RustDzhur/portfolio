@@ -1,7 +1,7 @@
 ﻿import Splide from '@splidejs/splide';
 
 
-  new Splide('.splide', {
+  new Splide('#slider1', {
     type: 'loop',
     autoWidth: true,
     gap: '1em'
