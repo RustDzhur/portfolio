@@ -4,6 +4,9 @@
   new Splide('#slider1', {
     type: 'loop',
     autoWidth: true,
-    gap: '1em'
+    focus: 'center',
+    gap: '1em',
+    pagination: false,
+    keyboard: true,
   }).mount();
 

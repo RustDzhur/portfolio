@@ -22,7 +22,6 @@ async function getResponse () {
         new Splide('#slider2', {
             type: 'loop',
             autoWidth: true,
-            autoHeight: true,
             focus: 'center',
             gap: '1em',
             pagination: false,
@@ -30,8 +29,8 @@ async function getResponse () {
           }).mount();
 
     }
-    catch (error) {
-        console.log(error);
+    catch {
+        console.log('error');
     }
 }
 
@@ -61,24 +60,3 @@ async function onRengerNews (news) {
     }).join('');
     refs.ul.insertAdjacentHTML('beforeend', markupNews);
 };
-
-/* <li class="splide__slide">
-        <a class="card-news__link">
-            <div class="card-news__wrapper">
-                <h3 class="card-news__title">
-                
-                </h3>
-                <img class="card-news__img" src="" alt="">
-                <p class="card-news__disr">
-                
-                </p>
-                <p class="card-news__author">
-                
-                </p>
-                <p class="card-news__date">
-                
-                </p>
-            </div>
-        </a>
-    </li>
- */
