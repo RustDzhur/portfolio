@@ -34,8 +34,8 @@ async function getResponse () {
 
 getResponse ()
 
-async function onRengerNews (news) {
-    const markupNews = await news.map(news => {
+function onRengerNews (news) {
+    const markupNews = news.map(news => {
         return `<li class="splide__slide">
         <a class="card-news__link" href="${news.url}" target="_blanc">
             <div class="card-news__wrapper">
