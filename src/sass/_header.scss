@@ -294,7 +294,6 @@
   width: 80px;
   height: 80px;
 
-  border: none;
   background: linear-gradient(
     108.46deg,
     rgba(255, 255, 255, 0.04) 0%,
@@ -302,17 +301,17 @@
   );
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
-
   border-radius: 20px;
-  cursor: pointer;
-}
-
-.socials__btn:hover {
-  background: linear-gradient(
-    108.46deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(10px);
-}
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: linear-gradient(
+      108.46deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }}
