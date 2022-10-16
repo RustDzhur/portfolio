@@ -1,5 +1,15 @@
 ﻿.news {
-    padding: 60px 0;
+    padding-bottom: 60px;
+}
+.news__container {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.news__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .news__title {
@@ -14,7 +24,7 @@
 
 .card-news__wrapper {
     width: 280px;
-    // height: 517px;
+    height: 517px;
     background: #ffffff;
     border-radius: 20px;
     padding: 24px 13px;
@@ -22,12 +32,12 @@
     backdrop-filter: blur(10px);
     @media screen and (min-width: 780px) {
         width: 340px;
-        // height: 534px;
+        height: 534px;
         padding: 30px 20px;
     }
     @media screen and (min-width: 1400px) {
         width: 295px;
-        // height: 529px;
+        height: 529px;
         padding: 20px 30px;
     }
 }
@@ -77,4 +87,49 @@
     font-size: 12px;
     line-height: 1.4;
     color: #484848;
+}
+.show-more-btns {
+    display: flex;
+    justify-content: space-around;
+}
+.previous-btn {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+.previous {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.95;
+    color: #141414;
+    @media screen and (min-width: 780px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 1400px) {
+        font-size: 34px;
+    }
+}
+.next-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+.next {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.95;
+    color: #141414;
+    @media screen and (min-width: 780px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 1400px) {
+        font-size: 34px;
+    }
 }

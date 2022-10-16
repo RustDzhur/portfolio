@@ -1,38 +1,38 @@
 ﻿const axios = require('axios').default;
-import Splide from '@splidejs/splide';
-
+let PAGE = 1;
 
 const refs = {
     ul: document.querySelector('.js-news-render'),
+    previousBtn: document.querySelector('.previous-btn'),
+    nextBtn: document.querySelector('.next-btn'),
 };
 
-const options = {
-    API_KEY: '090dd760c7d8494cbdd59210368bc828',
-    URL: 'https://newsapi.org/v2/everything',
+refs.previousBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (PAGE >=2) {
+        PAGE -= 1;
+        getApiNews ()
+        clearMarkup()
+    }
+});
+
+refs.nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    PAGE += 1;
+    getApiNews ()
+    clearMarkup()
+});
+
+async function getApiNews () {
+    
+    const options = {
+        API_KEY: '090dd760c7d8494cbdd59210368bc828',
+        URL: 'https://newsapi.org/v2/everything',
+    }
+    const response = await axios(`${options.URL}?q=IT&apiKey=${options.API_KEY}&pageSize=4&page=${PAGE}`).then(response => onRengerNews(response.data.articles)).catch(err => console.log(err))
 }
 
-async function getResponse () {
-    try {
-        const response = await axios.get(`${options.URL}?q=IT&apiKey=${options.API_KEY}&pageSize=100`);
-        console.log(response.data.articles);
-        onRengerNews (response.data.articles)
-
-        new Splide('#slider2', {
-            type: 'loop',
-            autoWidth: true,
-            focus: 'center',
-            gap: '1em',
-            pagination: false,
-            keyboard: true,
-          }).mount();
-
-    }
-    catch {
-        console.log('error');
-    }
-}
-
-getResponse ()
+getApiNews () 
 
 function onRengerNews (news) {
     const markupNews = news.map(news => {
@@ -58,3 +58,7 @@ function onRengerNews (news) {
     }).join('');
     refs.ul.insertAdjacentHTML('beforeend', markupNews);
 };
+
+function clearMarkup () {
+    refs.ul.innerHTML = '';
+}
