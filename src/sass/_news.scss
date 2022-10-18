@@ -5,6 +5,7 @@
     margin: 0 auto;
     margin-bottom: 60px;
 }
+
 .news__list {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +31,9 @@
     padding: 24px 13px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
+    overflow-y: scroll;
+
+
     @media screen and (min-width: 780px) {
         width: 340px;
         height: 534px;
@@ -52,14 +56,14 @@
 }
 
 .card-news__img {
-    width: 255px;
+    width: 100%;
     // height: 197px;
     margin-bottom: 20px;
     @media screen and (min-width: 780px) {
-        width: 300px;
+        width: 100%;
     }
     @media screen and (min-width: 1400px) {
-        width: 255px;
+        width: 100%;
     }
 }   
 
