@@ -23,13 +23,13 @@ refs.nextBtn.addEventListener('click', (e) => {
     clearMarkup()
 });
 
-async function getApiNews () {
+function getApiNews () {
     
     const options = {
         API_KEY: '090dd760c7d8494cbdd59210368bc828',
         URL: 'https://newsapi.org/v2/everything',
     }
-    const response = await axios(`${options.URL}?q=IT&apiKey=${options.API_KEY}&pageSize=4&page=${PAGE}`).then(response => onRengerNews(response.data.articles)).catch(err => console.log(err))
+    axios(`${options.URL}?q=IT&apiKey=${options.API_KEY}&pageSize=4&page=${PAGE}`).then(response => onRengerNews(response.data.articles)).catch(err => console.log(err))
 }
 
 getApiNews () 
