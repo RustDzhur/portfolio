@@ -31,7 +31,7 @@
 .history-text {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
 
     color: #484848;
@@ -41,37 +41,9 @@
 .end-history-text {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
 
     color: #484848;
     padding-bottom: 40px;
 }
-
-.resume__about {
-    border: 4px solid #000000;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 280px;
-    height: 70px;
-    justify-content: center;
-    background-color: inherit;
-    cursor: pointer;
-    
-    @media screen and (min-width: 780px) {
-      width: 511px;
-      height: 108px;
-    }
-  }
-  
-  .resume__text {
-    padding: 0;
-    margin: 0;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 24px;
-    line-height: 1.41;
-    color: #000000;
-    margin-right: 30px;
-  }
