@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // min-height: 100vh;
+  height: 700px;
   @media screen and (min-width: 780px) {
     height: 992px;
     overflow: hidden;
@@ -225,7 +225,7 @@
     justify-content: center;
     background-color: inherit;
     cursor: pointer;
-    
+
     // position: absolute;
     // z-index: 1;
     // top: 680px;
@@ -239,7 +239,7 @@
     opacity: 10%;
     margin-left: 23px;
   }
-  &:hover{
+  &:hover {
     background: linear-gradient(
       108.46deg,
       rgba(255, 255, 255, 0.4) 0%,
@@ -283,4 +283,5 @@
     );
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
-  }}
+  }
+}
