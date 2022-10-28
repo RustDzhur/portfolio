@@ -26,7 +26,7 @@ refs.nextBtn.addEventListener('click', e => {
 function getApiNews() {
   axios
     .get(
-      'https://newsapi.org/v2/everything?q=Computer&sortBy=popularity&pageSize=4&apiKey=090dd760c7d8494cbdd59210368bc828'
+      `https://newsapi.org/v2/everything?q=Computer&sortBy=popularity&pageSize=4&page=${PAGE}&apiKey=090dd760c7d8494cbdd59210368bc828`
     )
     .then(response => {
         onRengerNews(response.data.articles)
