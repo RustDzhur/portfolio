@@ -47,3 +47,39 @@
     color: #484848;
     padding-bottom: 40px;
 }
+
+
+.introdution__list,
+.contacts-with-me__list {
+    margin-bottom: 30px;
+}
+
+
+
+.introdution__item,
+.contacts-with-me__item,
+.what-can__item {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.5;
+
+    color: #484848;
+}
+
+.head-title-about {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #484848;
+    padding-bottom: 15px;
+}
+
+.wrapper-about {
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+}
